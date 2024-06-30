@@ -27,6 +27,7 @@ function AppWrapped() {
     dispatch(setStocks(sortedStocks));
     //check the stocks passed
     // console.log(sortedStocks);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);
 
 
