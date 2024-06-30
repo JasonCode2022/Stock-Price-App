@@ -1,0 +1,22 @@
+
+.App-link {
+    color: #61dafb;
+  }
+  
+  
+  .infoCardContainer {
+    display: flex;
+    
+  }
+  
+  .dashBoardContent {
+    background-color: var(--dashBoard-bg);
+    padding: 2.5rem 1.25rem;
+
+    /* height: 70vh; */
+  }
+  
+  .dashBoardContentContainer {
+    max-width: var(--site-width);
+    margin: 0 auto;
+  }

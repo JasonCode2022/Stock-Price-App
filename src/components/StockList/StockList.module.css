@@ -1,0 +1,91 @@
+.container {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: var(--box-border-radius);
+}
+
+.header {
+    padding: 0.625rem 0;
+    border-bottom: 0.125rem solid #f1f1f1;
+    margin-bottom: 0.9375rem;
+    color: #1d1d1d;
+    font-size: var(--h1-font-size);
+}
+
+.heading {
+    font-size: var(--h1-font-size);
+    font-weight: normal;
+}
+
+.listHeaders,
+.stockList {
+    transform: translate(2.4rem);
+}
+
+.listHeaders,
+.listItems {
+    display: flex;
+}
+
+.listItems {
+    color: #585858;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.stockList {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+.listContainer {
+    padding: 1.25rem;
+}
+
+.listItemName,
+.nameHeader {
+    width: 9.375rem;
+}
+
+.listItemBid,
+.bidHeader,
+.listItemAsk,
+.askHeader,
+.listItemTicker,
+.tickerHeader {
+    width: 6.25rem;
+}
+
+
+.dpspentHeader,
+.listItemDpsSpent {
+width: 12.5rem;
+}
+
+.listItemDps,
+.dpsHeader {
+    width: 7.8125rem;
+}
+
+.listItemPe,
+.peHeader {
+width: 4.6875rem;
+}
+
+.iconContainer {
+    height: 0.9375rem;
+    width: 0.9375rem;
+    border-radius: 50%;
+    /* background-color: white; */
+    padding: 0.3125rem;
+    position: absolute;
+    left: -2.125rem;
+    top: -0.125rem;
+}
+
+.icon {
+    fill: white;
+}

@@ -1,0 +1,27 @@
+.container {
+    padding: 0.5rem;
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+}
+
+.header {
+    font-size: 0.85rem;
+    /* margin: 0; */
+}
+
+.dividendList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listItem {
+    display: flex;
+    /* align-items: center; */
+    margin: 0.625rem 0;
+    position: relative;
+    width: 12.5rem;
+    justify-content: space-between;
+}

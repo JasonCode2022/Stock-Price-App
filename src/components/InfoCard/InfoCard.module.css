@@ -1,0 +1,20 @@
+.infoCard {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    color: var(--infoCard-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 8.1rem;
+    margin: 0 0.625rem;
+}
+
+.darkmode {
+    background-color: var(--infoCard-dark-bg-color);
+    color: #fff;
+}
+
+.header {
+    font-size: 0.9rem;
+}

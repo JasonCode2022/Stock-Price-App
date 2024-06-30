@@ -1,0 +1,55 @@
+.container {
+    padding: 0.5rem;
+    color: white;
+    /* margin-right: 2.5rem; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+
+}
+
+.header {
+    font-size: 0.85rem;
+    /* margin-left: 1.1rem; */
+}
+
+.exchangeList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listItem {
+    display: flex;
+    /* align-items: center; */
+    margin: 0.625rem 0;
+    position: relative; 
+}
+
+/* .name, .index {
+    flex: 1;
+    overflow: hidden;
+} */
+
+.name {
+    width: 9.375rem;
+}
+
+.index {
+    width: 6.25rem;
+    color: var(--exchange-green);
+}
+
+.percentage {
+    color: var(--exchange-green);
+}
+
+.dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: var(--exchange-green);
+    position: absolute;
+    left: -1.375rem;
+    top: 0.3rem;
+}

@@ -1,26 +1,54 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import DashBoard from './pages/DashBoard/DashBoard';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { sortStockByDividendYield } from './Helpers';
+import { useDispatch, useSelector } from 'react-redux';
+import { AppState, Stock } from './redux/types';
+import { setStocks } from './redux/actions';
 
-function App() {
+
+
+
+function AppWrapped() {
+
+  const dispatch = useDispatch();
+  const stocks = useSelector((state: AppState) => state.stocks);
+  //Or do the below but can generate an error!!!!!
+  // const { exchanges, stocks, selectedOption } = useSelector((state: AppState) => ({
+  //   exchanges: state.exchanges,
+  //   stocks: state.stocks,
+  //   selectedOption: state.selectedOption,
+  // }));
+  
+
+  
+  useEffect(() => {
+    const sortedStocks: Stock[] = sortStockByDividendYield(stocks);
+    dispatch(setStocks(sortedStocks));
+    //check the stocks passed
+    // console.log(sortedStocks);
+  }, [dispatch]);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <DashBoard
+              />
+            }
+          />
+        </Routes>
+      </Router>
     </div>
   );
 }
+
+const App = () => (
+    <AppWrapped />
+);
 
 export default App;
